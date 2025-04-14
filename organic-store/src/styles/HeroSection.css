@@ -1,0 +1,121 @@
+.hero-section {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero-image-container {
+  order: 2;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  order: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.leaf-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/leaf-decoration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.quality-badge {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.leaf-icon {
+  height: 16px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.quality-text {
+  color: #56632c;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.shop-button {
+  background-color: #6b7a35;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #56632c;
+}
+
+.button-icon {
+  font-size: 16px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-image-container {
+    order: 1;
+    flex: 1;
+  }
+
+  .hero-content {
+    order: 2;
+    flex: 1;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}
